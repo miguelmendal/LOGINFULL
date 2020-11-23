@@ -1,4 +1,6 @@
-﻿using Servicios.Servicios;
+﻿using LOGINFULL.View;
+using Servicios.Modelo;
+using Servicios.Servicios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -67,6 +69,12 @@ namespace LOGINFULL
             if (resul)
             {
                 MessageBox.Show("READY PLAYER ONE", "BIENVENIDO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Usuarios usuarios = new Usuarios();
+                usuarios.Show();
+            
+                
+                
             }
             else
             {
